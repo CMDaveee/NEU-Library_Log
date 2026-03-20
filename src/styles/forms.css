@@ -1,0 +1,206 @@
+/* ── SHARED FORM / REGISTRATION STYLES ── */
+
+.form-page {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-card {
+  background: var(--surf);
+  border: 1px solid var(--bdr);
+  border-radius: 12px;
+  padding: 2.5rem 2.25rem;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: var(--sh2);
+  animation: fadeUp 0.4s ease;
+}
+
+.form-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--bdr);
+}
+
+.form-card-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.35rem;
+  color: var(--txt);
+  line-height: 1.2;
+}
+
+.form-card-sub {
+  font-size: 0.75rem;
+  color: var(--txt3);
+  margin-top: 0.2rem;
+  letter-spacing: 0.04em;
+}
+
+.form-row {
+  margin-bottom: 1.1rem;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.875rem;
+  margin-bottom: 1.1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--txt2);
+  margin-bottom: 0.4rem;
+}
+
+.form-label .req {
+  color: var(--red);
+  margin-left: 2px;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 0.72rem 0.875rem;
+  border: 1.5px solid var(--bdr);
+  border-radius: 6px;
+  background: var(--surf2);
+  color: var(--txt);
+  font-size: 0.875rem;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--acc);
+  box-shadow: 0 0 0 3px rgba(46, 80, 144, 0.1);
+}
+
+.form-input:disabled,
+.form-select:disabled {
+  background: var(--hover-bg, var(--surf2));
+  color: var(--txt3);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.form-input.is-error,
+.form-select.is-error {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px var(--red-lt);
+}
+
+.form-error {
+  font-size: 0.72rem;
+  color: var(--red);
+  margin-top: 0.3rem;
+  font-weight: 500;
+}
+
+.form-hint {
+  font-size: 0.7rem;
+  color: var(--txt3);
+  margin-top: 0.3rem;
+}
+
+.form-id-display {
+  width: 100%;
+  padding: 0.72rem 0.875rem;
+  border: 1.5px solid var(--bdr);
+  border-radius: 6px;
+  background: var(--surf2);
+  color: var(--navy);
+  font-size: 1rem;
+  font-family: 'DM Mono', monospace;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+[data-theme="dark"] .form-id-display { color: var(--acc); }
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--bdr);
+}
+
+.form-submit {
+  flex: 1;
+  padding: 0.875rem;
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.form-submit:hover:not(:disabled) {
+  background: var(--steel);
+  transform: translateY(-1px);
+}
+
+.form-submit:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.form-cancel {
+  padding: 0.875rem 1.25rem;
+  background: var(--surf2);
+  color: var(--txt2);
+  border: 1.5px solid var(--bdr);
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.form-cancel:hover {
+  border-color: var(--acc);
+  color: var(--txt);
+}
+
+.form-info-box {
+  background: rgba(46, 80, 144, 0.06);
+  border: 1px solid rgba(46, 80, 144, 0.18);
+  border-radius: 6px;
+  padding: 0.875rem 1rem;
+  font-size: 0.8rem;
+  color: var(--txt2);
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .form-info-box {
+  background: rgba(61, 107, 196, 0.1);
+  border-color: rgba(61, 107, 196, 0.2);
+}
+
+@media (max-width: 540px) {
+  .form-row-2 { grid-template-columns: 1fr; }
+  .form-card  { padding: 1.75rem 1.25rem; }
+}
