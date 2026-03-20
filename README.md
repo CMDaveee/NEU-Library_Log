@@ -6,6 +6,9 @@
 ---
 
 ## Overview
+[New Era University Library Log](https://neu-library-log-bd990.web.app)
+**Project ID:** `neu-library-log-bd990`
+**Hosting URL:** `https://neu-library-log-bd990.web.app`
 
 NEU Library Log is a full-stack web application that digitizes and automates visitor management at the New Era University Library. It replaces manual paper logbooks with a real-time, cloud-connected system built on React and Firebase. The platform has two distinct interfaces: a **public kiosk** used by students to record their visits, and a **private admin dashboard** used exclusively by authorized library administrators.
 
@@ -300,10 +303,6 @@ Two settings work together to prevent 404 errors after deployment:
 
 ---
 
-## Firebase Project
-
-**Project ID:** `neu-library-log-bd990`
-**Hosting URL:** `https://neu-library-log-bd990.web.app`
 
 ### Firestore Collections
 
