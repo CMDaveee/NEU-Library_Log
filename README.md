@@ -6,7 +6,7 @@
 ---
 
 ## Overview
-[New Era University Library Log](https://neu-library-log-bd990.web.app/)<br>
+[New Era University Library Log](https://neu-library-log-bd990.web.app)<br>
 **Project ID:** `neu-library-log-bd990`<br>
 **Hosting URL:** `https://neu-library-log-bd990.web.app`
 
